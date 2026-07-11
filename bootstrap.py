@@ -3,15 +3,15 @@ import subprocess
 import time
 import sys
 
-REPO_URL = "https://github.com/privatejobwallah2002-hue/vdapi.git"
+REPO_URL = "https://github.com/privatejobwallah2002-hue/vdapiapi.git"
 
 def run():
-    if not os.path.exists("vd"):
+    if not os.path.exists("vdapi"):
         subprocess.run(["git", "clone", REPO_URL], check=True)
     else:
-        subprocess.run(["git", "-C", "vd", "pull"])
+        subprocess.run(["git", "-C", "vdapi", "pull"])
 
-    os.chdir("vd")
+    os.chdir("vdapi")
 
     print("Libraries install kar raha hoon...")
     subprocess.run([sys.executable, "-m", "pip", "install", "-r", "requirements.txt", "-q"])
