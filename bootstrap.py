@@ -3,7 +3,7 @@ import subprocess
 import time
 import sys
 
-REPO_URL = "https://github.com/privatejobwallah2002-hue/vd.git"
+REPO_URL = "https://github.com/privatejobwallah2002-hue/vdapi.git"
 
 def run():
     if not os.path.exists("vd"):
